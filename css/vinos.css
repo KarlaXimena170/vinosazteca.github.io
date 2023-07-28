@@ -1,0 +1,276 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+  }
+  
+  .logo img{
+  
+    width:400;
+    height:100;
+  }
+  body {
+    
+    background-color: #DBCDAA;
+    margin: 0;
+}
+
+
+.card-container {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    align-items: center;
+    background-color:#ffffff;
+}
+
+.card img {
+    width: 200;
+    height: 200;
+    object-fit: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+
+.imagen-de-fondo {
+    background-image: url('../imagenes/fondo\ de\ vino.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* Ajusta el tamaño y otros estilos del div según tus necesidades */
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+.info{
+    font-size: 46px;
+    font-family:sans-serif;
+    
+}
+
+.titulo{
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    
+}
+
+.subtitulo{
+    font-size: 23px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    
+  
+}
+.información{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 9px;
+    padding: 10px;
+}
+
+
+
+.tarjeta {
+    display: flex;
+    background-color:#84123F;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1300px;
+    align-items: center;
+    align-content: center;
+
+}
+
+.imagen img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 20px;
+    padding: 10;
+}
+
+.info {
+    padding: 10px;
+    
+}
+
+.container_colum {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text{
+    font-size: 23px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    padding:  4px;
+text-align: justify;
+}
+
+.personalizados{
+    text-align: left;
+    font-size: 70px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding:   10px;
+}
+
+
+
+
+
+
+
+form {
+    max-width: 1400px;
+    padding: 20px;
+    border: 1px solid #84123F;
+    border-radius: 5px;
+    background-color: #84123F;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #84123F;;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+  
+  
+  p{
+      color: #ffffff;
+      text-align: justify;
+      font-size: 20px;
+  }
+
+  .carrusel {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
+  }
+  
+  .carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carrusel-item:hover {
+    transform: scale(1.2);
+  }

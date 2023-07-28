@@ -1,0 +1,25 @@
+
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.logo img{
+
+  width:400;
+  height:100;
+}
